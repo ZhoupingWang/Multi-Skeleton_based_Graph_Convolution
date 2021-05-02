@@ -47,15 +47,13 @@ Put downloaded data into the following directory structure:
 3. Generate the bone data with:
     - `python gen_bone_data.py --dataset ntu`
 
-4. data description
-These files are raw data, without normalization and repetition, and only first person.
-action: 11-20
-camera view: [3]
-sample number: 2207/908
-data form: dict
-[[dict_keys(['joints']), ['C1', 'BL', ... 'RF', 'RB']],
-[dict_keys(['S017C003P007R002A012.skeleton']), data[frames-variable,joints-25,xyz-3]],
-............]
+4. Data description:
+    - These files are raw data, without normalization and repetition, and only first person.
+    - Action: 11-20
+    - Camera view: [3]
+    - Sample number: 2207/908
+    - Data form: dict
+      [[dict_keys(['joints']), ['C1', 'BL', ... 'RF', 'RB']],[dict_keys(['S017C003P007R002A012.skeleton']), data[frames-variable,joints-25,xyz-3]],............]
 
 
 ## Training & Testing
